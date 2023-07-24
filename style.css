@@ -129,7 +129,7 @@ button:hover{
 
 #about .container{
     text-align: center;
-    top: -80px;
+    top: -280px;
     padding: 200px 12px;
 }
 
@@ -239,95 +239,3 @@ button:hover{
     padding: 200px 12px;
 }
 
-@media (min-width: 850px) {
-    header {
-        position: fixed;
-        width: 100%;
-    }
-
-    header .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav {
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    #hero h1 {
-        font-size: 5em;
-    }
-
-    #about .container {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #about .image-container {
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #about h2 {
-        margin-top: 0;
-    }
-
-    #nuestra-carta .carta {
-        display: flex;
-        justify-content: center;
-    }
-
-    #nuestra-carta .menu {
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestra-carta h2 {
-        font-size: 2.7em;
-    }
-
-    #nuestra-carta h3 {
-        margin-top: 0;
-    }
-
-    #caracteristicas {
-        background-image: url("media/background-2.jpeg");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
-    }
-
-    #caracteristicas .container {
-        text-align: center;
-    }
-
-    #caracteristicas ul {
-        margin-left: 100px;
-    }
-
-    #final h2 {
-        font-size: 5em;
-    }
-
-    #final button {
-        font-size: 2em;
-    }
-
-    footer .container {
-        justify-content: flex-end;
-    }
-}
-
-/* Responsive styles for screens with minimum width 1200px */
-@media (min-width: 1200px) {
-    #caracteristicas {
-        background-position-x: calc(100vw - 800px);
-    }
-}
