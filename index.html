@@ -11,8 +11,6 @@
     <header>
       <div class="container">
           <img class="logo" src="img/logo.png" alt="">
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="menu-icon">&#9776;</label>
           <nav class="nav-1">
               <a href="#about">Sobre Nosotros</a>
               <a href="https://www.youtube.com/watch?v=Qip3xXCTzh4">Contacto</a>
@@ -225,22 +223,6 @@
                       </details>
                     </div>
               </div>
-              
-              <script>
-                const buttons = document.querySelectorAll('.button');
-                buttons.forEach((button) => {
-                    button.addEventListener('click', () => {
-                        button.parentNode.open = !button.parentNode.open;
-                    });
-                });
-        
-                const modalCloseButtons = document.querySelectorAll('.details-modal-close');
-                modalCloseButtons.forEach((button) => {
-                    button.addEventListener('click', () => {
-                        button.parentNode.parentNode.open = false;
-                    });
-                });
-            </script>
 
 
 
