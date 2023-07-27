@@ -64,27 +64,91 @@ header a:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-button {
-    font-size: 1.4em;
-    font-weight: lighter;
-    padding: 10px 20px;
-    border-radius: 6.5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    background-color: rgb(255, 255, 255);
-    
-}
-
-button:hover{
+.button {
     cursor: pointer;
-    background-color: rgba(153, 154, 155, 0.801);
-}
+    position: relative;
+    padding: 10px 24px;
+    color: rgb(122, 89, 18);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 36.3px;
+    height: 14.7px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+    
 
 
-.start {
+  .start {
+    cursor: pointer;
+    position: relative;
+    font-size: 17.3px;
+    padding: 14.5px 19.9px;
+    font-family: Raleway;
+    color: rgb(122, 89, 18);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: color rgba(245, 245, 220, 0);
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
 
-    height: 3em;
-
-}
+  }
+  
+  .start::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 41.5px;
+    height: 17px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .start:hover::before {
+    scale: 3;
+  }
+  
+  .start:hover {
+    color: #ffffff;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .start:active {
+    scale: 1;
+  }
 
 #hero{
     display: flex;
@@ -104,6 +168,7 @@ button:hover{
     background-size: cover;
     background-position: center center;
 }
+  
 
 #hero h1{
     font-size: 4em;
@@ -164,9 +229,7 @@ button:hover{
     border-radius: 15px;
 }
 
-.menu {
-    
-}
+
 
 .menu:first-child{
     background-image: linear-gradient(
@@ -246,8 +309,7 @@ button:hover{
 .button {
     appearance: none;
     background: rgba(255, 255, 255, 0.89);
-    border-radius: 0.25em;
-    color: black;
+    color: rgb(122, 89, 18);
     cursor: pointer;
     display: inline-block;
     font-weight: 1000;
@@ -263,7 +325,7 @@ button:hover{
 
 .details-modal {
     background: #ffffffef;
-    border-radius: 0.5em;
+    border-radius: 34px;
     box-shadow: 0 10px 20px rgba(black, 0.2);
     left: 50%;
     max-width: 90%;
@@ -272,7 +334,7 @@ button:hover{
     top: 30%;
     transform: translate(60%, -50%);
     width: 30em;
-    text-align: center;
+    text-align: left;
     max-height: 50vh;
     display: flex;
     flex-direction: column;
