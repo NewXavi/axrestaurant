@@ -427,3 +427,55 @@ header a:hover{
     top: 2px;
   }
   
+  @media only screen and (max-width: 600px) {
+    .logo{
+        width: 100px; /* Cambia el valor a lo que consideres adecuado */
+        height: auto;
+    }
+    .nav-1{
+        top: 30px;
+        right: 20px;
+    }
+    h1 {font-size: 1em;}
+
+    h2 {font-size: 0.9em;}
+
+    h3 {font-size: 2em;}
+
+    p {font-size: 0.8.9em;}
+
+    #hero h1{
+        font-size: 3em;
+        top: 30em;
+    }
+
+    .texto{
+        display: flex;
+        position: absolute;
+
+
+        top: 200px;
+        right: -90px;
+    }
+    
+    .details-modal {
+        background: #f1ededef;
+        border-radius: 0.5em;
+        box-shadow: 0 10px 20px rgba(black, 0.2);
+        left: -48%;
+        max-width: 90%;
+        pointer-events: none;
+        position: absolute;
+        top: 144%;
+        transform: translate(60%, -50%);
+        width: 40em;
+        text-align: left;
+        max-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+    
+
+  }
