@@ -229,6 +229,12 @@ header a:hover{
     border-radius: 15px;
 }
 
+#nuestra-carta .menu-2{
+  padding: 12.5px;
+  margin: 12px;
+  border-radius: 15px;
+}
+
 
 
 .menu:first-child{
@@ -297,6 +303,97 @@ header a:hover{
     background-size: cover;
 }
 
+.menu:nth-child(7){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.5)
+  )
+  ,url(img/menu.png);
+  background-position: center center;
+  background-size: contain;
+}
+
+
+
+
+.menu-2:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+      )
+      ,url(img/drinks-2.jpg);
+      background-position: -12ch;
+      background-size: cover;
+  }
+  
+  .menu-2:nth-child(2){
+      background-image: linear-gradient(
+          0deg,
+          rgba(0,0,0,0.8),
+          rgba(0,0,0,0.5)
+          )
+          ,url(img/tapas.jpg);
+          background-position: center center;
+          background-size: cover;
+      }
+      
+      .menu-2:nth-child(3){
+          background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.5)
+  )
+  ,url(img/ensalada-2.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.menu-2:nth-child(4){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.5)
+      )
+      ,url(img/montaditos.png);
+      background-position: center center;
+      background-size: cover;
+  }
+  
+  .menu-2:nth-child(5){
+      background-image: linear-gradient(
+          0deg,
+          rgba(0,0,0,0.8),
+          rgba(0,0,0,0.5)
+  )
+  ,url(img/plato.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.menu-2:nth-child(6){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.5)
+  )
+  ,url(img/postre.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.menu-2:nth-child(7){
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.5)
+)
+,url(img/menu.png);
+background-position: center center;
+background-size: contain;
+}
+
 .colour {
     color: rgba(255, 52, 52, 0.801);
 }
@@ -305,22 +402,22 @@ header a:hover{
     background-color: rgb(30,30,30);
 }
 
-
 .button {
-    appearance: none;
-    background: rgba(255, 255, 255, 0.89);
-    color: rgb(122, 89, 18);
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 1000;
-    height: 3em;
-    line-height: 3em;
-    padding: 0 1em;
-  
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.555);
-    }
+  appearance: none;
+  background: rgba(255, 255, 255, 0.89);
+  color: rgb(122, 89, 18);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 1000;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1em;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.555);
   }
+}
+
   
 
 .details-modal {
@@ -357,6 +454,8 @@ header a:hover{
         display: block;
       }
     }
+
+
 
     .details-modal-title {
       color: #000000;
@@ -457,25 +556,8 @@ header a:hover{
         top: 200px;
         right: -90px;
     }
-    
-    .details-modal {
-        background: #f1ededef;
-        border-radius: 0.5em;
-        box-shadow: 0 10px 20px rgba(black, 0.2);
-        left: -48%;
-        max-width: 90%;
-        pointer-events: none;
-        position: absolute;
-        top: 144%;
-        transform: translate(60%, -50%);
-        width: 40em;
-        text-align: left;
-        max-height: 80vh;
-        display: flex;
-        flex-direction: column;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-    }
+
+
     
 
   }
