@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
 
 * {box-sizing: border-box;} 
 
@@ -7,7 +8,7 @@ html{
 }
 
 body {
-    font-family: Raleway, sans-serif;
+  font-family: 'Inconsolata', monospace;
     margin: 0;
     background-color: rgb(30, 30, 30);
     
@@ -21,7 +22,7 @@ h3 {font-size: 2em;}
 
 p {font-size: 1.25em;}
 
-
+br {}
 /* Asegurarnos de que el contenedor del logo tenga una posición relativa */
 /* style.css */
 
@@ -55,21 +56,26 @@ header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: rgba(173, 86, 173, 0.836);
 }
 
-.color-acento{ color: rgb(39, 37, 37);}
+.color-acento{
+  color: rgb(190, 65, 190)
+}
+.color2{
+  font-family: 'Inconsolata', monospace;
+}
 
 header a:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgb(190, 65, 190) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .button {
     cursor: pointer;
     position: relative;
     padding: 10px 24px;
-    color: rgb(122, 89, 18);
-    border: 2px solid rgb(193, 163, 98);
+    color: rgb(190, 65, 190);
+    border: 2px solid rgb(190, 65, 190);
     border-radius: 34px;
     background-color: transparent;
     font-weight: 600;
@@ -87,7 +93,7 @@ header a:hover{
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: rgb(193, 163, 98);
+    background-color: rgb(190, 65, 190);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -98,7 +104,7 @@ header a:hover{
   .button:hover {
     color: #ffffff;
     scale: 1.1;
-    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+    box-shadow: 0 0px 20px rgba(190, 65, 190, 0.308);
   }
   
   .button:active {
@@ -113,8 +119,8 @@ header a:hover{
     font-size: 17.3px;
     padding: 14.5px 19.9px;
     font-family: Raleway;
-    color: rgb(122, 89, 18);
-    border: 2px solid rgb(193, 163, 98);
+    color: rgb(190, 65, 190);
+    border: 2px solid rgb(190, 65, 190);
     border-radius: 34px;
     background-color: color rgba(245, 245, 220, 0);
     font-weight: 600;
@@ -132,7 +138,7 @@ header a:hover{
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: rgb(193, 163, 98);
+    background-color: rgb(190, 65, 190);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -143,7 +149,7 @@ header a:hover{
   .start:hover {
     color: #ffffff;
     scale: 1.1;
-    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+    box-shadow: 0 0px 20px rgba(190, 65, 190, 0.336);
   }
   
   .start:active {
@@ -180,32 +186,37 @@ header a:hover{
 }
 
 #about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 100vh;
-    color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 110vh;
+  color: white;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
     )
     ,url(img/background-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     margin-bottom: 0;
-}
-
-#about .container{
+  }
+  
+  #about .container{
     text-align: center;
-    top: -280px;
+    top: -50px;
     padding: 200px 12px;
-}
+  }
+  
+  .degustacion{
+    padding: 0 7em;
 
-#nuestra-carta {
+  }
+  #nuestra-carta {
     margin-bottom: 0;
     height: 100vh;
     color: white;
@@ -405,7 +416,7 @@ background-size: contain;
 .button {
   appearance: none;
   background: rgba(255, 255, 255, 0.89);
-  color: rgb(122, 89, 18);
+  color: rgb(161, 86, 161);
   cursor: pointer;
   display: inline-block;
   font-weight: 1000;
@@ -537,11 +548,11 @@ background-size: contain;
     }
     h1 {font-size: 1em;}
 
-    h2 {font-size: 0.9em;}
+    h2 {font-size: 2em;}
 
     h3 {font-size: 2em;}
 
-    p {font-size: 0.8.9em;}
+    p {font-size: 1.2em;}
 
     #hero h1{
         font-size: 3em;
@@ -549,15 +560,125 @@ background-size: contain;
     }
 
     .texto{
-        display: flex;
-        position: absolute;
+      font-size: 13px;
+
+        position: relative;
 
 
-        top: 200px;
-        right: -90px;
+        top: 23px;
+        right: 00px;
+    }
+
+      
+  .degustacion{
+    padding: 0em;
+
+  }
+
+  .details-modal {
+    background: #ffffff;
+    border-radius: 34px;
+    box-shadow: 0 10px 20px rgba(black, 0.2);
+    left: 50%;
+    max-width: 90%;
+    pointer-events: none;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -120%);
+    width: 40em;
+    text-align: left;
+    max-height: 150vh;
+    display: flex;
+    flex-direction: column;
+  
+
+  
+    .details-modal-close {
+      align-items: center;
+      color: #111827;
+      display: flex;
+      height: 4.5em;
+      justify-content: center;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 21.5em;
+  
+      svg {
+        display: block;
+      }
     }
 
 
-    
+
+    .details-modal-title {
+      color: #000000;
+      padding: 1.5em 2em;
+      font-size: 20px ;
+      font-weight: bold;
+      pointer-events: all;
+      position: relative;
+      width: calc(100% - 4.5em);
+  
+      h1 {
+        font-size: 1.25rem;
+        font-weight: 900;
+        line-height: normal;
+      }
+    }
+  
+
+    .details-modal-content {
+      border-top: 1px solid #e0e0e0;
+      padding: 2em;
+      pointer-events: all;
+      overflow: auto;
+    }
+  }
+  
+
+  .details-modal-overlay {
+    transition: opacity 0.2s ease-out;
+    pointer-events: none;
+    background: rgba(#0f172a, 0.8);
+    position: fixed;
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  
+    details[open] & {
+      pointer-events: all;
+      opacity: 0.5;
+    }
+  }
+
+  details {
+    summary {
+      list-style: none;
+        
+      &:focus {
+        outline: none;
+      }
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+  }
+  code {
+    line-height: 100%;
+    background-color: #000000;
+    padding: 0.1em 0.4em;
+    letter-spacing: -0.05em;
+    word-break: normal;
+    border-radius: 7px;
+    color: white;
+    font-weight: normal;
+    font-size: 1.75rem;
+    position: relative;
+    top: 2px;
+  }
 
   }
