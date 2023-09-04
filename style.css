@@ -219,7 +219,6 @@ header a:hover{
   #nuestra-carta {
     margin-bottom: 0;
     height: 100vh;
-    color: white;
     background-color: rgb(30,30,30);
     text-align: center;
     height: 100vh;
@@ -231,8 +230,11 @@ header a:hover{
 
 #nuestra-carta h2{
     font-size: 3.2em;
+    color: white;
 }
-
+#nuestra-carta h3{
+  color: white;
+}
 
 #nuestra-carta .menu{
     padding: 12.5px;
