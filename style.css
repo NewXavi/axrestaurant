@@ -571,7 +571,6 @@ background-size: contain;
         right: 00px;
     }
 
-      
   .degustacion{
     padding: 0em;
 
@@ -633,7 +632,7 @@ background-size: contain;
 
     .details-modal-content {
       border-top: 1px solid #e0e0e0;
-      padding: 2em;
+      padding: 22em !important; /* Increase this value to add more space */
       pointer-events: all;
       overflow: auto;
     }
